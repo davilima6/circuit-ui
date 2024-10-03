@@ -1,0 +1,65 @@
+import { Meta, Status, Props, Story } from '../../../../.storybook/components';
+import * as Stories from './CollapsibleDetails.stories';
+
+<Meta of={Stories} />
+
+# CollapsibleDetails
+
+<Status variant="stable" />
+
+The CollapsibleDetails component is used to display content in a collapsible section. It is a styled version of the `<details>` HTML element.
+
+<Story of={Stories.Default} />
+<Props />
+
+## Usage
+
+Use the CollapsibleDetails component to display FAQs and similar content in collapsible sections. It provides a flexible and accessible way to manage collapsible content.
+
+## Component variations
+
+### Default
+
+The default CollapsibleDetails component renders a `details` element with a `summary` element and collapsible content.
+
+<Story of={Stories.Default} />
+
+### Open by default
+
+The CollapsibleDetails component can be rendered open by default using the `initialOpen` prop.
+
+<Story of={Stories.OpenByDefault} />
+
+---
+
+## Accessibility
+
+### Best practices
+
+#### Use semantic HTML elements
+
+The CollapsibleDetails component uses the `<details>` and `<summary>` HTML elements, which provide built-in accessibility features. Ensure that the content within the collapsible section is accessible to all users.
+
+#### Provide meaningful summary text
+
+The summary text should be concise and descriptive, providing users with a clear understanding of the content within the collapsible section.
+
+#### Ensure focusable elements are accessible
+
+All focusable elements within the collapsible content should be accessible to keyboard users. Ensure that focus order follows a logical reading order.
+
+### Resources
+
+#### Test your page's keyboard interactivity
+
+Tab through your interface and verify that all focusable elements within the collapsible content receive focus in a logical order.
+
+#### Test your page using a screen reader
+
+[Test your page using a screen reader](https://webaim.org/articles/screenreader_testing/) like JAWS (Windows), NVDA (Windows, Linux) or VoiceOver (macOS).
+
+#### Related WCAG success criteria
+
+- 1.3.1: [Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
+- 2.4.3: [Focus Order](https://www.w3.org/WAI/WCAG21/Understanding/focus-order)
+- 2.4.6: [Headings and Labels](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
